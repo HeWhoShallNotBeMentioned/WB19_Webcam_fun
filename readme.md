@@ -1,12 +1,18 @@
-# _{Application Name}_
+# _{Webcam_fun}_
 
-#### _{Brief description of application}, {//2018}_
+#### _{3 different ways of manipulating webcams.}, {1/5/2018}_
 
 #### By _**{Chris Underwood}**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_{3 different ways of manipulating webcams but you can only do 1 of the three at any time. The default set up is #3 the green screen.
+  1) Redscreen which currently defaults to red but could be set to any color. This feature gives the entire screen an over saturation.
+  2) RGBsplit takes the red blue and green pixles and pulls them apart a certain number of pixles so you can multiple individual colored shadows on the screen. Global alpha can be used to create a delayed shadow.
+  3) The last is green screen like in the movies. Basically you can use the slide bars on the screen to "eliminate" color in the webcam feed.
+  4) commenting out all of the three options just gives you a bigger unaltered camera feed on your desktop.
+
+  There is also an option to take a phone of the altered feed and to download the photo by clicking on a photo.}_
 
 ## Setup/Installation Requirements
 
@@ -17,19 +23,19 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
 * type npm start & hit enter
 * Open a window in the browser of your choice to localhost:3000
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+_{To use the other options go into scripts.js, paintToCanvas function, comment out the line that begins with pixels = greenScreen, and uncomment either pixels = redEffect or pixels = rgbSplit. With rbgSplit you can also uncomment the globalAlpha line.}_
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_{The slider controls only works for the green screen option. }_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_{cunderwoodmn [at] gmail {dot} com}_
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_{vanila_js, webcam, navigator.mediaDevices.getUserMedia}_
 
 ### License
 
